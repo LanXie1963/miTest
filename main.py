@@ -11,15 +11,15 @@ db = DBWrapper(settings.DBName)
 def index():
     session["statementID"] = 1
     session["intellectScores"] = {
-        "logical":0,
-        "inner":0,
-        "bodily":0,
-        "verbal":0,
-        "musical":0,
-        "imaginative":0,
-        "philosophical":0,
-        "social":0,
-        "natural":0
+        "Логический":0,
+        "Внутренний":0,
+        "Телестный":0,
+        "Вербальный":0,
+        "Музыкальный":0,
+        "Образный":0,
+        "Филосовский":0,
+        "Социальный":0,
+        "Природный":0
     }
     return send_from_directory("./static/html/","main.html")
 
